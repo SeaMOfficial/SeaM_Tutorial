@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS `seam_tutorial` (
+    `license`      VARCHAR(64) NOT NULL,
+    `state`        VARCHAR(16) NOT NULL DEFAULT 'done',
+    `completed_at` TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`license`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
